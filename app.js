@@ -5,7 +5,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initDynamicYear();
   initModeToggle();
-  initThemePicker();
   initCanvas();
   initTypewriter();
   initNavScroll();
@@ -24,7 +23,7 @@ function initDynamicYear() {
 }
 
 /* ==========================================================================
-   0. DARK / LIGHT COLOR MODE TOGGLER
+   1. DARK / LIGHT COLOR MODE TOGGLER
    ========================================================================== */
 function initModeToggle() {
   const modeBtn = document.getElementById('modeToggleBtn');
@@ -59,49 +58,7 @@ function initModeToggle() {
 }
 
 /* ==========================================================================
-   1. THEME ACCENT PICKER & PERSISTENCE
-   ========================================================================== */
-function initThemePicker() {
-  const themeBtn = document.getElementById('themePickerBtn');
-  const themeDropdown = document.getElementById('themeDropdown');
-  const themeOptions = document.querySelectorAll('.theme-option');
-
-  // Load saved theme
-  const savedTheme = localStorage.getItem('yr_portfolio_theme') || 'cyan';
-  if (savedTheme !== 'cyan') {
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  }
-
-  if (themeBtn && themeDropdown) {
-    themeBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      themeDropdown.classList.toggle('show');
-    });
-
-    document.addEventListener('click', (e) => {
-      if (!themeDropdown.contains(e.target) && e.target !== themeBtn) {
-        themeDropdown.classList.remove('show');
-      }
-    });
-
-    themeOptions.forEach(opt => {
-      opt.addEventListener('click', () => {
-        const theme = opt.getAttribute('data-set-theme');
-        if (theme === 'cyan') {
-          document.documentElement.removeAttribute('data-theme');
-        } else {
-          document.documentElement.setAttribute('data-theme', theme);
-        }
-        localStorage.setItem('yr_portfolio_theme', theme);
-        themeDropdown.classList.remove('show');
-        showToast(`Accent color set to ${opt.textContent.trim()}`);
-      });
-    });
-  }
-}
-
-/* ==========================================================================
-   2. INTERACTIVE CANVAS PARTICLE BACKGROUND
+   2. INTERACTIVE CANVAS PARTICLE BACKGROUND (EMERALD MATRIX)
    ========================================================================== */
 function initCanvas() {
   const canvas = document.getElementById('ambient-canvas');
@@ -144,8 +101,8 @@ function initCanvas() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
       ctx.fillStyle = isLight 
-        ? `rgba(2, 132, 199, ${this.alpha * 0.4})` 
-        : `rgba(0, 242, 254, ${this.alpha * 0.5})`;
+        ? `rgba(5, 150, 105, ${this.alpha * 0.45})` 
+        : `rgba(16, 185, 129, ${this.alpha * 0.55})`;
       ctx.fill();
     }
   }
@@ -172,8 +129,8 @@ function initCanvas() {
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
           ctx.strokeStyle = isLight
-            ? `rgba(2, 132, 199, ${0.08 * (1 - dist / 110)})`
-            : `rgba(0, 242, 254, ${0.12 * (1 - dist / 110)})`;
+            ? `rgba(5, 150, 105, ${0.1 * (1 - dist / 110)})`
+            : `rgba(16, 185, 129, ${0.14 * (1 - dist / 110)})`;
           ctx.lineWidth = 0.6;
           ctx.stroke();
         }

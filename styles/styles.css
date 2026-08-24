@@ -6,14 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  /* Dynamic Accent Theme Variables (Default: Cyber Cyan) */
-  --accent-primary: #00f2fe;
-  --accent-secondary: #4facfe;
-  --accent-gradient: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
-  --accent-glow: rgba(0, 242, 254, 0.25);
-  --accent-glow-strong: rgba(0, 242, 254, 0.5);
-  --accent-subtle: rgba(0, 242, 254, 0.1);
-  --accent-border: rgba(0, 242, 254, 0.2);
+  /* Emerald Matrix Accent Palette (Default Dark Theme) */
+  --accent-primary: #10b981;
+  --accent-secondary: #06b6d4;
+  --accent-gradient: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --accent-glow: rgba(16, 185, 129, 0.25);
+  --accent-glow-strong: rgba(16, 185, 129, 0.5);
+  --accent-subtle: rgba(16, 185, 129, 0.1);
+  --accent-border: rgba(16, 185, 129, 0.25);
 
   /* Dark Obsidian Theme Palette */
   --bg-main: #060913;
@@ -28,7 +28,7 @@
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
-  --text-inverse: #030712;
+  --text-inverse: #ffffff;
 
   /* Borders & Shadows */
   --border-glass: rgba(255, 255, 255, 0.08);
@@ -54,42 +54,20 @@
   --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Theme Presets */
-[data-theme="violet"] {
-  --accent-primary: #c084fc;
-  --accent-secondary: #8b5cf6;
-  --accent-gradient: linear-gradient(135deg, #c084fc 0%, #8b5cf6 100%);
-  --accent-glow: rgba(192, 132, 252, 0.25);
-  --accent-glow-strong: rgba(192, 132, 252, 0.5);
-  --accent-subtle: rgba(192, 132, 252, 0.1);
-  --accent-border: rgba(192, 132, 252, 0.2);
-}
-
-[data-theme="emerald"] {
-  --accent-primary: #10b981;
-  --accent-secondary: #06b6d4;
-  --accent-gradient: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
-  --accent-glow: rgba(16, 185, 129, 0.25);
-  --accent-glow-strong: rgba(16, 185, 129, 0.5);
-  --accent-subtle: rgba(16, 185, 129, 0.1);
-  --accent-border: rgba(16, 185, 129, 0.2);
-}
-
-[data-theme="amber"] {
-  --accent-primary: #f59e0b;
-  --accent-secondary: #ec4899;
-  --accent-gradient: linear-gradient(135deg, #f59e0b 0%, #ec4899 100%);
-  --accent-glow: rgba(245, 158, 11, 0.25);
-  --accent-glow-strong: rgba(245, 158, 11, 0.5);
-  --accent-subtle: rgba(245, 158, 11, 0.1);
-  --accent-border: rgba(245, 158, 11, 0.2);
-}
-
 /* ==========================================================================
-   LIGHT MODE THEME ENGINE
+   LIGHT MODE THEME ENGINE (Emerald Matrix in Light)
    ========================================================================== */
 [data-mode="light"] {
   color-scheme: light;
+
+  /* Emerald Matrix Accent for Light Mode */
+  --accent-primary: #059669;
+  --accent-secondary: #0d9488;
+  --accent-gradient: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+  --accent-glow: rgba(5, 150, 105, 0.2);
+  --accent-glow-strong: rgba(5, 150, 105, 0.4);
+  --accent-subtle: rgba(5, 150, 105, 0.1);
+  --accent-border: rgba(5, 150, 105, 0.25);
 
   /* Light Base Palette */
   --bg-main: #f4f7fb;
@@ -112,47 +90,6 @@
   --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.1);
   --shadow-glow: 0 0 30px var(--accent-glow);
-}
-
-/* Light Mode Overrides for Cyber Cyan */
-[data-mode="light"]:not([data-theme]),
-[data-mode="light"][data-theme="cyan"] {
-  --accent-primary: #0284c7;
-  --accent-secondary: #0ea5e9;
-  --accent-gradient: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
-  --accent-glow: rgba(2, 132, 199, 0.2);
-  --accent-subtle: rgba(2, 132, 199, 0.1);
-  --accent-border: rgba(2, 132, 199, 0.25);
-}
-
-/* Light Mode Overrides for Violet */
-[data-mode="light"][data-theme="violet"] {
-  --accent-primary: #7c3aed;
-  --accent-secondary: #9333ea;
-  --accent-gradient: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
-  --accent-glow: rgba(124, 58, 237, 0.2);
-  --accent-subtle: rgba(124, 58, 237, 0.1);
-  --accent-border: rgba(124, 58, 237, 0.25);
-}
-
-/* Light Mode Overrides for Emerald */
-[data-mode="light"][data-theme="emerald"] {
-  --accent-primary: #059669;
-  --accent-secondary: #0d9488;
-  --accent-gradient: linear-gradient(135deg, #059669 0%, #0d9488 100%);
-  --accent-glow: rgba(5, 150, 105, 0.2);
-  --accent-subtle: rgba(5, 150, 105, 0.1);
-  --accent-border: rgba(5, 150, 105, 0.25);
-}
-
-/* Light Mode Overrides for Amber */
-[data-mode="light"][data-theme="amber"] {
-  --accent-primary: #d97706;
-  --accent-secondary: #db2777;
-  --accent-gradient: linear-gradient(135deg, #d97706 0%, #db2777 100%);
-  --accent-glow: rgba(217, 119, 6, 0.2);
-  --accent-subtle: rgba(217, 119, 6, 0.1);
-  --accent-border: rgba(217, 119, 6, 0.25);
 }
 
 /* Base Reset */
@@ -525,66 +462,6 @@ ul {
   border-color: var(--accent-primary);
   background: var(--accent-subtle);
 }
-
-.theme-dropdown {
-  position: absolute;
-  top: calc(100% + 10px);
-  right: 0;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-glass-light);
-  border-radius: var(--radius-md);
-  padding: 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-width: 140px;
-  box-shadow: var(--shadow-lg);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-8px);
-  transition: all var(--transition-fast);
-  z-index: 1010;
-}
-
-.theme-dropdown.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.theme-option {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 12px;
-  background: transparent;
-  border: none;
-  color: var(--text-secondary);
-  font-size: 0.85rem;
-  font-family: var(--font-body);
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  width: 100%;
-  text-align: left;
-  transition: all var(--transition-fast);
-}
-
-.theme-option:hover {
-  background: rgba(255, 255, 255, 0.08);
-  color: var(--text-primary);
-}
-
-.theme-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.dot-cyan { background: #00f2fe; }
-.dot-violet { background: #c084fc; }
-.dot-emerald { background: #10b981; }
-.dot-amber { background: #f59e0b; }
 
 /* Mobile Menu Button */
 .menu-toggle {
