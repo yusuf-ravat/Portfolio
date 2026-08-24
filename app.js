@@ -4,6 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initDynamicYear();
+  initModeToggle();
   initThemePicker();
   initCanvas();
   initTypewriter();
@@ -19,6 +20,41 @@ function initDynamicYear() {
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
+  }
+}
+
+/* ==========================================================================
+   0. DARK / LIGHT COLOR MODE TOGGLER
+   ========================================================================== */
+function initModeToggle() {
+  const modeBtn = document.getElementById('modeToggleBtn');
+  const modeIcon = document.getElementById('modeIcon');
+
+  // Load saved mode (default: dark)
+  const savedMode = localStorage.getItem('yr_portfolio_mode') || 'dark';
+  applyMode(savedMode);
+
+  if (modeBtn) {
+    modeBtn.addEventListener('click', () => {
+      const currentMode = document.documentElement.getAttribute('data-mode') || 'dark';
+      const newMode = currentMode === 'dark' ? 'light' : 'dark';
+      applyMode(newMode);
+      localStorage.setItem('yr_portfolio_mode', newMode);
+      showToast(`Switched to ${newMode === 'light' ? 'Light' : 'Dark'} Mode`);
+    });
+  }
+
+  function applyMode(mode) {
+    document.documentElement.setAttribute('data-mode', mode);
+    if (modeIcon) {
+      if (mode === 'light') {
+        modeIcon.className = 'fas fa-moon';
+        modeBtn?.setAttribute('title', 'Switch to Dark Mode');
+      } else {
+        modeIcon.className = 'fas fa-sun';
+        modeBtn?.setAttribute('title', 'Switch to Light Mode');
+      }
+    }
   }
 }
 
@@ -58,7 +94,7 @@ function initThemePicker() {
         }
         localStorage.setItem('yr_portfolio_theme', theme);
         themeDropdown.classList.remove('show');
-        showToast(`Theme changed to ${opt.textContent.trim()}`);
+        showToast(`Accent color set to ${opt.textContent.trim()}`);
       });
     });
   }
@@ -104,9 +140,12 @@ function initCanvas() {
     }
 
     draw() {
+      const isLight = document.documentElement.getAttribute('data-mode') === 'light';
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0, 242, 254, ${this.alpha * 0.5})`;
+      ctx.fillStyle = isLight 
+        ? `rgba(2, 132, 199, ${this.alpha * 0.4})` 
+        : `rgba(0, 242, 254, ${this.alpha * 0.5})`;
       ctx.fill();
     }
   }
@@ -117,6 +156,7 @@ function initCanvas() {
 
   function animate() {
     ctx.clearRect(0, 0, width, height);
+    const isLight = document.documentElement.getAttribute('data-mode') === 'light';
 
     for (let i = 0; i < particles.length; i++) {
       particles[i].update();
@@ -131,7 +171,9 @@ function initCanvas() {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0, 242, 254, ${0.12 * (1 - dist / 110)})`;
+          ctx.strokeStyle = isLight
+            ? `rgba(2, 132, 199, ${0.08 * (1 - dist / 110)})`
+            : `rgba(0, 242, 254, ${0.12 * (1 - dist / 110)})`;
           ctx.lineWidth = 0.6;
           ctx.stroke();
         }
