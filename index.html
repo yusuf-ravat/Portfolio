@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Yusufali Ravat | Jr. .NET Developer & AI-Assisted Full Stack Engineer</title>
+  <meta name="title" content="Yusufali Ravat | Jr. .NET Developer & AI-Assisted Full Stack Engineer">
+  <meta name="description" content="Portfolio of Yusufali Ravat - Full-Stack .NET Core Developer, ReactJS & AngularJS Engineer, and AI-Assisted Software Builder specializing in scalable web apps and SaaS platforms.">
+  <meta name="keywords" content="Yusufali Ravat, .NET Developer, ASP.NET Core, C#, ReactJS, AngularJS, PostgreSQL, MS SQL Server, Generative AI, AI Agents, Portfolio">
+  <meta name="author" content="Yusufali Ravat">
+  <meta name="theme-color" content="#060913">
+
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yusufaliravat.dev/">
+  <meta property="og:title" content="Yusufali Ravat | Jr. .NET Developer & AI-Assisted Full Stack Engineer">
+  <meta property="og:description" content="Full-Stack .NET Core Developer, ReactJS & AngularJS Engineer, building scalable SaaS platforms with AI-assisted engineering workflows.">
+  <meta property="og:site_name" content="Yusufali Ravat Portfolio">
+
+  <!-- Twitter Card -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Yusufali Ravat | Jr. .NET Developer & AI-Assisted Full Stack Engineer">
+  <meta property="twitter:description" content="Full-Stack .NET Core Developer, ReactJS & AngularJS Engineer, building scalable SaaS platforms with AI-assisted engineering workflows.">
+
+  <!-- Schema.org JSON-LD Structured Data for Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yusufali Ravat",
+    "jobTitle": "Full-Stack .NET Developer & AI Software Engineer",
+    "url": "https://yusufaliravat.dev",
+    "email": "yravat009@gmail.com",
+    "telephone": "+919714405312",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Gujarat",
+      "addressCountry": "India"
+    },
+    "knowsAbout": [
+      ".NET Core",
+      "ASP.NET MVC",
+      "C#",
+      "Entity Framework",
+      "ReactJS",
+      "AngularJS",
+      "PostgreSQL",
+      "MS SQL Server",
+      "Generative AI",
+      "AI Agents"
+    ],
+    "sameAs": [
+      "https://github.com/yusuf-ravat",
+      "https://www.linkedin.com/in/yusuf-ravat"
+    ]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico">
+
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- Background Ambient Glows & Dynamic Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" id="navBrand">
+        <div class="nav-logo-badge">YR</div>
+        <div class="nav-brand-text">
+          <span class="nav-name">Yusufali Ravat</span>
+          <span class="nav-role">&lt;.NET &amp; AI Dev /&gt;</span>
+        </div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#terminal" class="nav-link">AI Terminal</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Theme Accent Switcher -->
+        <div class="theme-picker">
+          <button class="theme-btn" id="themePickerBtn" title="Change Theme Accent" aria-label="Change Accent Color">
+            <i class="fas fa-palette"></i>
+          </button>
+          <div class="theme-dropdown" id="themeDropdown">
+            <button class="theme-option" data-set-theme="cyan">
+              <span class="theme-dot dot-cyan"></span> Cyber Cyan
+            </button>
+            <button class="theme-option" data-set-theme="violet">
+              <span class="theme-dot dot-violet"></span> Violet Nebula
+            </button>
+            <button class="theme-option" data-set-theme="emerald">
+              <span class="theme-dot dot-emerald"></span> Emerald Matrix
+            </button>
+            <button class="theme-option" data-set-theme="amber">
+              <span class="theme-dot dot-amber"></span> Sunset Flare
+            </button>
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-primary btn-sm d-none-mobile">
+          <span>Let's Talk</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="status-pulse"></span>
+          <span>Available for New Opportunities</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Yusufali Ravat</span>
+        </h1>
+
+        <div class="typewriter-wrapper">
+          <span>I'm a</span>
+          <span class="typewriter-text" id="typewriter">Jr. .NET Core Developer</span>
+        </div>
+
+        <p class="hero-description">
+          Passionate and results-driven Software Developer with hands-on expertise in developing full-stack web applications using <b>.NET Core</b>, <b>ASP.NET MVC</b>, <b>ReactJS</b>, and <b>AngularJS</b>, combined with cutting-edge <b>Generative AI &amp; AI Agent</b> workflows to build scalable digital products.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="btnExploreProjects">
+            <i class="fas fa-cubes"></i>
+            <span>Explore Projects</span>
+          </a>
+          <a href="img/Resume.pdf" download="Yusufali_Ravat_Resume.pdf" class="btn btn-secondary" id="btnDownloadResume">
+            <i class="fas fa-file-arrow-down"></i>
+            <span>Download Resume</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="btnHeroContact">
+            <i class="fas fa-paper-plane"></i>
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-value gradient-text">1.5+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value gradient-text">6+</span>
+            <span class="stat-label">Production Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value gradient-text">100%</span>
+            <span class="stat-label">Full-Stack &amp; AI Stack</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Holographic Interactive Code Card -->
+      <div class="hero-visual">
+        <div class="hero-floating-badge badge-top-left">
+          <i class="fab fa-react" style="color:#61dafb; font-size:1.2rem;"></i>
+          <span>ReactJS &amp; .NET Core</span>
+        </div>
+
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-controls">
+              <span class="control-dot dot-red"></span>
+              <span class="control-dot dot-yellow"></span>
+              <span class="control-dot dot-green"></span>
+            </div>
+            <span class="terminal-title"><i class="fas fa-code"></i> YusufaliProfile.cs</span>
+            <span style="font-family:var(--font-mono); font-size:0.75rem; color:#10b981;">● Online</span>
+          </div>
+          <div class="terminal-body">
+            <div><span class="code-keyword">namespace</span> <span class="code-type">Yusufali.Portfolio</span>;</div>
+            <br>
+            <div><span class="code-keyword">public class</span> <span class="code-type">EngineerProfile</span></div>
+            <div>{</div>
+            <div style="padding-left: 20px;">
+              <span class="code-keyword">public string</span> <span class="code-var">Name</span> { <span class="code-keyword">get</span>; } = <span class="code-str">"Yusufali Ravat"</span>;
+            </div>
+            <div style="padding-left: 20px;">
+              <span class="code-keyword">public string[]</span> <span class="code-var">Backend</span> = { <span class="code-str">".NET Core"</span>, <span class="code-str">"ASP.NET MVC"</span>, <span class="code-str">"C#"</span>, <span class="code-str">"EF Core"</span> };
+            </div>
+            <div style="padding-left: 20px;">
+              <span class="code-keyword">public string[]</span> <span class="code-var">Frontend</span> = { <span class="code-str">"ReactJS"</span>, <span class="code-str">"AngularJS"</span>, <span class="code-str">"Bootstrap"</span> };
+            </div>
+            <div style="padding-left: 20px;">
+              <span class="code-keyword">public string[]</span> <span class="code-var">Databases</span> = { <span class="code-str">"PostgreSQL"</span>, <span class="code-str">"MS SQL"</span>, <span class="code-str">"MySQL"</span> };
+            </div>
+            <div style="padding-left: 20px;">
+              <span class="code-keyword">public string</span> <span class="code-var">CurrentFocus</span> = <span class="code-str">"Axivon AI SaaS Platform"</span>;
+            </div>
+            <div style="padding-left: 20px;">
+              <span class="code-keyword">public bool</span> <span class="code-var">OpenToOpportunities</span> = <span class="code-type">true</span>;
+            </div>
+            <div>}</div>
+          </div>
+        </div>
+
+        <div class="hero-floating-badge badge-bottom-right">
+          <i class="fas fa-brain" style="color:#c084fc; font-size:1.2rem;"></i>
+          <span>Generative AI &amp; Agents</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-user-astronaut"></i> Overview</span>
+          <h2 class="section-title">Engineering Scalable Systems with <span class="gradient-text">Precision &amp; AI</span></h2>
+          <p class="section-description">
+            Combining rock-solid backend architectures in .NET Core with dynamic frontend experiences and modern AI-assisted engineering workflows.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="glass-card about-intro-card">
+            <h3 style="font-size:1.4rem;">Building Next-Gen Web Solutions</h3>
+            <p class="about-highlight-p">
+              "I specialize in bridging powerful backend APIs with clean, user-centric interfaces, solving complex business logic with clarity and performance."
+            </p>
+            <p class="about-detail-p">
+              With experience at <b>Enterprise Analytic LLP</b> and ongoing development of high-impact SaaS applications like <b>Axivon</b>, I have developed financial software, booking engines, job referral networks, and multi-tenant architectures.
+            </p>
+            <p class="about-detail-p">
+              I am also deeply passionate about incorporating <b>Generative AI, LLMs, and AI coding agents (Gemini, Claude Code, Antigravity)</b> into daily software development cycles to write resilient code faster, conduct automated testing, and deliver intelligent features.
+            </p>
+            <div class="about-tags">
+              <span class="about-tag">📍 Gujarat, India</span>
+              <span class="about-tag">💼 B.E. Computer Engineering</span>
+              <span class="about-tag">🚀 SaaS &amp; API Architecture</span>
+              <span class="about-tag">🌐 English • Hindi • Gujarati</span>
+            </div>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fas fa-server"></i>
+              </div>
+              <h4 class="pillar-title">Backend &amp; APIs</h4>
+              <p class="pillar-desc">
+                High-throughput RESTful Web APIs, Entity Framework, C#, MVC design patterns, and secure multi-tenant backends.
+              </p>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <h4 class="pillar-title">Frontend Mastery</h4>
+              <p class="pillar-desc">
+                Crafting interactive user interfaces with ReactJS, AngularJS, JavaScript (ES6+), Bootstrap, and modern CSS3.
+              </p>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fas fa-database"></i>
+              </div>
+              <h4 class="pillar-title">Databases &amp; SQL</h4>
+              <p class="pillar-desc">
+                Designing normalized schemas, writing high-performance queries, and indexing in PostgreSQL, MS SQL Server, and MySQL.
+              </p>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box">
+                <i class="fas fa-microchip"></i>
+              </div>
+              <h4 class="pillar-title">AI &amp; Automation</h4>
+              <p class="pillar-desc">
+                Harnessing LLMs, prompt engineering, AI agent architectures, and AI coding tools for rapid, high-quality development.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS & AI HUB
+         ========================================================================== -->
+    <section class="section" id="skills" style="background: linear-gradient(180deg, transparent 0%, rgba(11, 17, 32, 0.5) 100%);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-layer-group"></i> Core Competencies</span>
+          <h2 class="section-title">Technical Skills &amp; <span class="gradient-text">Toolkit</span></h2>
+          <p class="section-description">
+            A comprehensive overview of the programming languages, frameworks, databases, and AI tooling I use daily.
+          </p>
+        </div>
+
+        <div class="skills-categories">
+          <!-- Backend -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-network-wired"></i></div>
+              <h3 class="category-title">Backend Technologies</h3>
+            </div>
+            <div class="skills-pills-list">
+              <span class="skill-pill"><i class="fas fa-code"></i> .NET Core</span>
+              <span class="skill-pill"><i class="fas fa-cube"></i> ASP.NET MVC</span>
+              <span class="skill-pill"><i class="fas fa-exchange-alt"></i> Web API</span>
+              <span class="skill-pill"><i class="fas fa-project-diagram"></i> Entity Framework</span>
+              <span class="skill-pill"><i class="fas fa-terminal"></i> C# Language</span>
+              <span class="skill-pill"><i class="fas fa-shield-alt"></i> RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fab fa-react"></i></div>
+              <h3 class="category-title">Frontend Technologies</h3>
+            </div>
+            <div class="skills-pills-list">
+              <span class="skill-pill"><i class="fab fa-react"></i> ReactJS</span>
+              <span class="skill-pill"><i class="fab fa-angular"></i> AngularJS</span>
+              <span class="skill-pill"><i class="fab fa-js-square"></i> JavaScript (ES6+)</span>
+              <span class="skill-pill"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+              <span class="skill-pill"><i class="fab fa-html5"></i> HTML5 / CSS3</span>
+              <span class="skill-pill"><i class="fas fa-code"></i> jQuery</span>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-database"></i></div>
+              <h3 class="category-title">Databases &amp; Storage</h3>
+            </div>
+            <div class="skills-pills-list">
+              <span class="skill-pill"><i class="fas fa-database"></i> PostgreSQL</span>
+              <span class="skill-pill"><i class="fas fa-server"></i> MS SQL Server</span>
+              <span class="skill-pill"><i class="fas fa-table"></i> MySQL</span>
+              <span class="skill-pill"><i class="fas fa-bolt"></i> Query Optimization</span>
+              <span class="skill-pill"><i class="fas fa-key"></i> Stored Procedures</span>
+            </div>
+          </div>
+
+          <!-- AI & Modern Tools -->
+          <div class="glass-card skill-category-card">
+            <div class="category-header">
+              <div class="category-icon"><i class="fas fa-robot"></i></div>
+              <h3 class="category-title">AI &amp; Developer Tools</h3>
+            </div>
+            <div class="skills-pills-list">
+              <span class="skill-pill"><i class="fas fa-brain"></i> Generative AI &amp; LLMs</span>
+              <span class="skill-pill"><i class="fas fa-atom"></i> AI Agents</span>
+              <span class="skill-pill"><i class="fas fa-magic"></i> Prompt Engineering</span>
+              <span class="skill-pill"><i class="fab fa-git-alt"></i> Git &amp; GitHub</span>
+              <span class="skill-pill"><i class="fas fa-laptop-code"></i> Visual Studio</span>
+              <span class="skill-pill"><i class="fas fa-paper-plane"></i> Postman</span>
+              <span class="skill-pill"><i class="fab fa-shopify"></i> Shopify &amp; Qikink</span>
+              <span class="skill-pill"><i class="fas fa-bolt"></i> Antigravity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI-Assisted Engineering Spotlight -->
+        <div class="ai-spotlight-card">
+          <div class="ai-spotlight-content">
+            <span class="section-badge" style="background:rgba(192, 132, 252, 0.15); border-color:rgba(192, 132, 252, 0.3); color:#c084fc;">
+              <i class="fas fa-sparkles"></i> AI Engineering Spotlight
+            </span>
+            <h3>AI-Assisted Software Development</h3>
+            <p>
+              Leveraging advanced AI coding agents including <b>Gemini</b>, <b>Claude Code</b>, and agentic workflows for rapid technical research, boilerplate generation, automated test drafting, and complex SaaS module debugging.
+            </p>
+            <div class="ai-workflow-list">
+              <div class="ai-workflow-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Architecting AI Agent workflows for automated customer follow-ups &amp; CRM intelligence.</span>
+              </div>
+              <div class="ai-workflow-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Accelerated code refactoring, bug triage, and comprehensive API documentation.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ai-chips-grid">
+            <div class="ai-chip">
+              <span class="ai-chip-title"><i class="fas fa-bolt" style="color:#c084fc;"></i> LLM Integration</span>
+              <span class="ai-chip-desc">Integrating OpenAI/Claude/Gemini APIs into production web backends.</span>
+            </div>
+            <div class="ai-chip">
+              <span class="ai-chip-title"><i class="fas fa-robot" style="color:#34d399;"></i> Autonomous Agents</span>
+              <span class="ai-chip-desc">Building task-oriented agent workflows for CRM automation.</span>
+            </div>
+            <div class="ai-chip">
+              <span class="ai-chip-title"><i class="fas fa-terminal" style="color:#60a5fa;"></i> Coding Agents</span>
+              <span class="ai-chip-desc">Claude Code &amp; Gemini CLI mastery for assisted full-stack coding.</span>
+            </div>
+            <div class="ai-chip">
+              <span class="ai-chip-title"><i class="fas fa-shield-alt" style="color:#f59e0b;"></i> Safe AI Review</span>
+              <span class="ai-chip-desc">Rigorous human-in-the-loop validation of generated code &amp; tests.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SHOWCASE
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-cubes"></i> Portfolio</span>
+          <h2 class="section-title">Featured Works &amp; <span class="gradient-text">Case Studies</span></h2>
+          <p class="section-description">
+            Explore production systems, SaaS platforms, and enterprise solutions developed with .NET Core, React, and modern databases.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai-saas">AI &amp; SaaS</button>
+          <button class="filter-btn" data-filter="dotnet">Full-Stack .NET</button>
+          <button class="filter-btn" data-filter="client">Enterprise &amp; Client</button>
+          <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- 1. Axivon SaaS CRM (Flagship Featured) -->
+          <div class="glass-card project-card featured" data-category="ai-saas dotnet">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-flagship-badge"><i class="fas fa-star"></i> Flagship Project</span>
+                <span class="project-tag-badge">AI &amp; SaaS CRM</span>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">2024 – Present</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Axivon — AI-Powered SaaS CRM Platform</h3>
+              <span class="project-subtitle">Independent SaaS Project (4-Member Dev Team)</span>
+              <p class="project-summary">
+                A multi-tenant, cloud-native SaaS CRM platform engineered to streamline customer relationships, manage sales pipelines, and automate repetitive business workflows with autonomous AI agents.
+              </p>
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span><b>Multi-Tenant Architecture:</b> Built with .NET Core &amp; PostgreSQL ensuring strict tenant data isolation.</span>
+                </div>
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span><b>Complete CRM Suite:</b> Leads, Companies, Contacts, Deals, Tasks, Activities, and Analytics Dashboards.</span>
+                </div>
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span><b>AI Agent Integration:</b> Automated meeting intelligence, lead scoring, and smart follow-up suggestions.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">ReactJS</span>
+                <span class="tech-tag">.NET Core Web API</span>
+                <span class="tech-tag">Entity Framework</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">AI Agents</span>
+                <span class="tech-tag">Claude Code / Gemini</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-project-id="axivon">
+                  <i class="fas fa-circle-info"></i>
+                  <span>View Case Study</span>
+                </button>
+                <span style="font-size:0.8rem; color:var(--accent-primary); font-family:var(--font-mono);">Active Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Motel Booking Platform -->
+          <div class="glass-card project-card" data-category="dotnet client">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-tag-badge">Client Project</span>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">2024</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Motel Booking Platform</h3>
+              <span class="project-subtitle">Independent Client Engagement</span>
+              <p class="project-summary">
+                A room reservation platform enabling seamless customer bookings with automated dynamic weekend and festival pricing rules.
+              </p>
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Dynamic pricing rules automatically adjusting rates for weekends.</span>
+                </div>
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Dual portal with dedicated Admin panel for rooms, availability, and bookings.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">.NET Core Web API</span>
+                <span class="tech-tag">ReactJS / AngularJS</span>
+                <span class="tech-tag">MS SQL Server</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-project-id="motel">
+                  <i class="fas fa-circle-info"></i>
+                  <span>Explore Details</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. VaibhavLaxmi Finance Management -->
+          <div class="glass-card project-card" data-category="dotnet client">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-tag-badge">Enterprise FinTech</span>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">Enterprise Analytic LLP</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">VaibhavLaxmi — Finance Software</h3>
+              <span class="project-subtitle">Loan &amp; Installment Management</span>
+              <p class="project-summary">
+                A financial management system engineered to manage loan disbursements, interest calculation formulas, and installment tracking across multi-branch networks.
+              </p>
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Multi-branch loan distribution with strict ledger data integrity.</span>
+                </div>
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Optimized SQL queries and stored procedures for fast financial reports.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">.NET Core Web API</span>
+                <span class="tech-tag">AngularJS</span>
+                <span class="tech-tag">MS SQL Server</span>
+                <span class="tech-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-project-id="vaibhavlaxmi">
+                  <i class="fas fa-circle-info"></i>
+                  <span>Explore Details</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Semicon Referrals -->
+          <div class="glass-card project-card" data-category="dotnet client">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-tag-badge">Job &amp; Recruitment</span>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">Enterprise Analytic LLP</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Semicon Referrals Job Portal</h3>
+              <span class="project-subtitle">Referral Rewards Platform</span>
+              <p class="project-summary">
+                Job recruitment portal matching top candidates with vacancies featuring an automated referral tracking and reward distribution system.
+              </p>
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Job postings, candidate application pipelines, and referral logs.</span>
+                </div>
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Secure RESTful APIs with optimized MS SQL database operations.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">.NET Core Web API</span>
+                <span class="tech-tag">AngularJS</span>
+                <span class="tech-tag">MS SQL</span>
+                <span class="tech-tag">Bootstrap</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-project-id="semicon">
+                  <i class="fas fa-circle-info"></i>
+                  <span>Explore Details</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Memoriesnsmiles Event Platform -->
+          <div class="glass-card project-card" data-category="dotnet client">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-tag-badge">Event &amp; Booking</span>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">Enterprise Analytic LLP</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Memoriesnsmiles</h3>
+              <span class="project-subtitle">Event Management &amp; Bookings</span>
+              <p class="project-summary">
+                A unified event booking platform for coordinating photography, catering, and decoration vendors under integrated client schedules.
+              </p>
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>End-to-end package customization with real-time vendor availability.</span>
+                </div>
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Responsive, user-friendly UI built with AngularJS and Bootstrap.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">.NET Core Web API</span>
+                <span class="tech-tag">AngularJS</span>
+                <span class="tech-tag">MS SQL</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-project-id="memoriesnsmiles">
+                  <i class="fas fa-circle-info"></i>
+                  <span>Explore Details</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Shopify Store -->
+          <div class="glass-card project-card" data-category="ecommerce">
+            <div class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-tag-badge">E-Commerce</span>
+                <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-muted);">Personal Project</span>
+              </div>
+            </div>
+
+            <div class="project-card-body">
+              <h3 class="project-title">Shopify E-Commerce Store</h3>
+              <span class="project-subtitle">Dropshipping &amp; Operations</span>
+              <p class="project-summary">
+                An online clothing store built with customized Shopify theme layouts and automated dropshipping fulfillment via Qikink.
+              </p>
+              <div class="project-features-list">
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Customized storefront, collection taxonomy, and checkout flows.</span>
+                </div>
+                <div class="project-feature-item">
+                  <i class="fas fa-chevron-right"></i>
+                  <span>Hands-on experience in supplier API integration and merchant ops.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <div class="project-tech-tags">
+                <span class="tech-tag">Shopify</span>
+                <span class="tech-tag">Qikink API</span>
+                <span class="tech-tag">Dropshipping</span>
+                <span class="tech-tag">UI/UX</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn btn-secondary btn-sm" data-project-id="shopify">
+                  <i class="fas fa-circle-info"></i>
+                  <span>Explore Details</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CAREER & EDUCATION TIMELINE
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-briefcase"></i> Background</span>
+          <h2 class="section-title">Experience &amp; <span class="gradient-text">Education</span></h2>
+          <p class="section-description">
+            My professional career path, software development milestones, and academic foundation.
+          </p>
+        </div>
+
+        <div class="experience-edu-grid">
+          <!-- Experience Column -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <i class="fas fa-laptop-code"></i>
+              <h3 style="font-size:1.35rem;">Work Experience</h3>
+            </div>
+
+            <div class="timeline-list">
+              <!-- Independent Work -->
+              <div class="glass-card timeline-item">
+                <span class="timeline-period">JUNE 2024 – PRESENT</span>
+                <h4 class="timeline-role">Software Developer &amp; AI Researcher</h4>
+                <div class="timeline-company">Independent Software Projects &amp; SaaS</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Core developer in a four-member team engineering <b>Axivon</b>, a multi-tenant AI-powered SaaS CRM platform in ReactJS, .NET Core, and PostgreSQL.</li>
+                    <li>Developed full-stack client solutions including dynamic Motel Booking platform with weekend surge pricing algorithms.</li>
+                    <li>Explored Generative AI, LLMs, and autonomous AI agents for CRM business automation.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Enterprise Analytic LLP Developer -->
+              <div class="glass-card timeline-item">
+                <span class="timeline-period">JAN 2023 – JUNE 2024</span>
+                <h4 class="timeline-role">Jr. Web Developer</h4>
+                <div class="timeline-company">Enterprise Analytic LLP</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Developed and maintained .NET Core Web API applications with AngularJS frontend across finance, hospitality, and retail domains.</li>
+                    <li>Optimized SQL queries and application code, significantly decreasing page load times.</li>
+                    <li>Built core modules for loan management, event booking platforms, and job referral systems.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Enterprise Analytic LLP Intern -->
+              <div class="glass-card timeline-item">
+                <span class="timeline-period">JAN 2023 – MAR 2023</span>
+                <h4 class="timeline-role">Software Developer Intern</h4>
+                <div class="timeline-company">Enterprise Analytic LLP</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li>Assisted in developing financial management software using .NET Core, AngularJS, and MS SQL Server.</li>
+                    <li>Supported backend database and API maintenance in ASP.NET MVC.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education & Credentials Column -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <i class="fas fa-graduation-cap"></i>
+              <h3 style="font-size:1.35rem;">Education &amp; Details</h3>
+            </div>
+
+            <div class="timeline-list">
+              <!-- B.E. Degree -->
+              <div class="glass-card timeline-item">
+                <span class="timeline-period">2020 – 2023</span>
+                <h4 class="timeline-role">Bachelor of Engineering (B.E.)</h4>
+                <div class="timeline-company">Computer Engineering — Smt S R Patel Engineering, Unjha</div>
+                <div class="timeline-body">
+                  <p>Comprehensive studies in data structures, algorithms, object-oriented programming in C#/Java, database management systems (DBMS), and web software architecture.</p>
+                </div>
+              </div>
+
+              <!-- Diploma -->
+              <div class="glass-card timeline-item">
+                <span class="timeline-period">2017 – 2020</span>
+                <h4 class="timeline-role">Diploma in Computer Engineering</h4>
+                <div class="timeline-company">Government Polytechnic, Waghai</div>
+                <div class="timeline-body">
+                  <p>Strong foundational coursework in computer science fundamentals, web development, relational databases, and software engineering principles.</p>
+                </div>
+              </div>
+
+              <!-- Personal Highlights -->
+              <div class="glass-card timeline-item" style="border-color:rgba(0, 242, 254, 0.2);">
+                <span class="timeline-period">ADDITIONAL INFO</span>
+                <h4 class="timeline-role">Personal Profile &amp; Languages</h4>
+                <div class="timeline-company">Global Ready Developer</div>
+                <div class="timeline-body">
+                  <ul>
+                    <li><b>Languages:</b> English, Hindi, Gujarati (Fluent)</li>
+                    <li><b>Interests:</b> Traveling, Cricket, Volleyball, Tech Experimentation</li>
+                    <li><b>Work Authorization:</b> Indian Citizen (Available for Remote / Relocation)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INTERACTIVE AI TERMINAL / PROMPT PLAYGROUND
+         ========================================================================== -->
+    <section class="section" id="terminal" style="background: radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.6) 0%, transparent 100%);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-terminal"></i> Interactive AI Console</span>
+          <h2 class="section-title">Query My Background in the <span class="gradient-text">Terminal</span></h2>
+          <p class="section-description">
+            Type commands or click quick suggestions below to interact with an AI terminal simulation of my resume.
+          </p>
+        </div>
+
+        <div class="terminal-interactive-card">
+          <div class="cli-bar">
+            <div class="terminal-controls">
+              <span class="control-dot dot-red"></span>
+              <span class="control-dot dot-yellow"></span>
+              <span class="control-dot dot-green"></span>
+            </div>
+            <span style="font-family:var(--font-mono); font-size:0.8rem; color:#94a3b8;"><i class="fas fa-robot"></i> yusufali-ai-assistant --v2.0</span>
+            <span style="font-size:0.75rem; color:#34d399; font-family:var(--font-mono);">READY</span>
+          </div>
+
+          <div class="cli-body" id="cliOutput">
+            <div class="cli-output-line" style="color:var(--accent-primary);">
+              ⚡ <b>Welcome to Yusufali's AI Assistant Sandbox!</b> Type <span style="text-decoration:underline;">help</span> or choose a quick command below:
+            </div>
+            <div class="cli-output-line" style="color:#64748b;">
+              Try exploring: "skills", "axivon", "experience", "contact", or "education".
+            </div>
+          </div>
+
+          <div class="cli-quick-commands">
+            <span style="font-size:0.75rem; color:var(--text-muted); align-self:center; font-family:var(--font-mono);">Quick prompts:</span>
+            <button class="cli-btn-hint" data-cmd="skills">skills</button>
+            <button class="cli-btn-hint" data-cmd="axivon">axivon</button>
+            <button class="cli-btn-hint" data-cmd="experience">experience</button>
+            <button class="cli-btn-hint" data-cmd="contact">contact</button>
+            <button class="cli-btn-hint" data-cmd="education">education</button>
+            <button class="cli-btn-hint" data-cmd="clear">clear</button>
+          </div>
+
+          <div class="cli-prompt-row" style="padding: 12px 20px; background:#070b14;">
+            <span class="cli-symbol">yusufali@dev:~$</span>
+            <input type="text" id="cliInput" class="cli-input" placeholder="Type a command (e.g. skills, axivon, contact)..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SUITE & CONNECT
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-envelope-open-text"></i> Get In Touch</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Extraordinary</span></h2>
+          <p class="section-description">
+            Looking for a .NET Developer, Full-Stack Engineer, or AI-integrated SaaS builder? Feel free to reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Quick Contact Cards -->
+          <div class="contact-cards-col">
+            <!-- Email -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-info-left">
+                <div class="contact-icon-box">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Email Address</div>
+                  <div class="contact-value">yravat009@gmail.com</div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-icon-only" data-copy-text="yravat009@gmail.com" data-copy-label="Email" title="Copy Email">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-info-left">
+                <div class="contact-icon-box">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Phone &amp; WhatsApp</div>
+                  <div class="contact-value">+91 97144 05312</div>
+                </div>
+              </div>
+              <button class="btn btn-secondary btn-icon-only" data-copy-text="+919714405312" data-copy-label="Phone number" title="Copy Phone">
+                <i class="far fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Location -->
+            <div class="glass-card contact-info-card">
+              <div class="contact-info-left">
+                <div class="contact-icon-box">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <div class="contact-value">Gujarat, India (Remote / Hybrid)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resume Download Card -->
+            <div class="glass-card" style="padding:24px; display:flex; align-items:center; justify-content:space-between; border-color:var(--accent-border);">
+              <div>
+                <h4 style="font-size:1.05rem;">Looking for my CV?</h4>
+                <p style="font-size:0.85rem; color:var(--text-secondary); margin-top:2px;">Get a complete PDF copy of my resume.</p>
+              </div>
+              <a href="img/Resume.pdf" download="Yusufali_Ravat_Resume.pdf" class="btn btn-primary btn-sm">
+                <i class="fas fa-download"></i>
+                <span>Download CV</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="glass-card contact-form-card">
+            <h3 style="font-size:1.35rem; margin-bottom:16px;">Send Me a Message</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="formName">Your Name</label>
+                <input type="text" id="formName" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formEmail">Email Address</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formSubject">Subject</label>
+                <input type="text" id="formSubject" class="form-input" placeholder="e.g. Project Opportunity / Job Offer" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="formMessage">Message</label>
+                <textarea id="formMessage" class="form-textarea" placeholder="Tell me about your project, goals, or timeline..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btnSubmitMessage" style="width:100%;">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copy">
+        © <span id="currentYear">2026</span> <b>Yusufali Ravat</b>. Built with modern web standards, .NET precision, and AI inspiration.
+      </div>
+
+      <div class="footer-socials">
+        <a href="mailto:yravat009@gmail.com" class="social-icon-btn" title="Email Me" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yusuf-ravat" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="LinkedIn" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/yusuf-ravat" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="tel:+919714405312" class="social-icon-btn" title="Call" aria-label="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PROJECT DEEP DIVE MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="projectModal">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div style="display:flex; align-items:center; gap:10px;">
+          <i class="fas fa-layer-group" style="color:var(--accent-primary);"></i>
+          <span style="font-weight:700; font-family:var(--font-heading);">Project Deep Dive</span>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Dialog">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modalDetailsContainer">
+        <!-- Dynamically injected via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Custom Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
