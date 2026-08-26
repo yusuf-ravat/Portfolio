@@ -224,7 +224,8 @@ function initNavScroll() {
   });
 
   if (menuToggle && navLinks) {
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
       navLinks.classList.toggle('active');
       const icon = menuToggle.querySelector('i');
       if (icon) {
@@ -242,6 +243,30 @@ function initNavScroll() {
           icon.classList.remove('fa-times');
         }
       });
+    });
+
+    // Close menu when clicking outside navbar
+    document.addEventListener('click', (e) => {
+      if (navLinks.classList.contains('active') && !navbar?.contains(e.target)) {
+        navLinks.classList.remove('active');
+        const icon = menuToggle?.querySelector('i');
+        if (icon) {
+          icon.classList.add('fa-bars');
+          icon.classList.remove('fa-times');
+        }
+      }
+    });
+
+    // Reset menu on resize to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        const icon = menuToggle?.querySelector('i');
+        if (icon) {
+          icon.classList.add('fa-bars');
+          icon.classList.remove('fa-times');
+        }
+      }
     });
   }
 }

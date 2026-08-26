@@ -1,9 +1,12 @@
 # 🚀 Yusufali Ravat — Developer Portfolio
 
-[![Portfolio Live](https://img.shields.io/badge/Portfolio-Live_Site-00f2fe?style=for-the-badge&logo=google-chrome&logoColor=black)](https://yusuf-ravat.github.io/Portfolio/)
+[![Live Site](https://img.shields.io/badge/Netlify-Live_Site-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://yusufravat.netlify.app/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Mirror-00f2fe?style=for-the-badge&logo=github&logoColor=white)](https://yusuf-ravat.github.io/Portfolio/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yusuf-ravat)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yusuf-ravat)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+
+🔗 **Live Website:** [https://yusufravat.netlify.app/](https://yusufravat.netlify.app/)
 
 A modern, high-performance personal portfolio website built with clean vanilla web standards (HTML5, modern CSS3, ES6+ JavaScript), featuring **cyber-glassmorphism**, **real-time particle canvas effects**, an **interactive AI CLI terminal simulator**, and **in-depth project case-study modals**.
 
@@ -68,6 +71,7 @@ Then visit `http://localhost:8000` in your browser.
 
 ## 📬 Contact & Connect
 
+- 🌐 **Live Website:** [https://yusufravat.netlify.app/](https://yusufravat.netlify.app/)
 - 👤 **Yusufali Ravat**
 - 📧 **Email:** [yravat009@gmail.com](mailto:yravat009@gmail.com)
 - 💼 **LinkedIn:** [linkedin.com/in/yusuf-ravat](https://www.linkedin.com/in/yusuf-ravat)
